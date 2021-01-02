@@ -1,0 +1,46 @@
+package toolbag;
+
+import java.awt.event.*;  
+
+import javax.swing.*;  
+public class WCC extends JFrame implements ActionListener{  
+
+private JTextArea textArea;  
+private JButton btnWord,btnCharacters;
+
+private JLabel lblWallpaper;
+private JButton btnHomePage;
+WCC(){  
+    super("Word Character Counter - JavaTpoint");  
+    textArea=new JTextArea();  
+    textArea.setBounds(50,50,300,200);  
+      
+    btnWord=new JButton("Word");  
+    btnWord.setBounds(50,300,100,30);  
+      
+    btnCharacters=new JButton("Character");  
+    btnCharacters.setBounds(180,300,100,30);  
+      
+    btnWord.addActionListener(this);  
+    btnCharacters.addActionListener(this);  
+    add(btnWord);
+    add(btnCharacters);
+    add(textArea);  
+    setSize(600,600);  
+    setLayout(null);  
+    setVisible(true);  
+}  
+public void actionPerformed(ActionEvent e){  
+    String text=textArea.getText();  
+    if(e.getSource()==btnWord){  
+        String words[]=text.split("\\s");  
+        JOptionPane.showMessageDialog(this,"Total words: "+words.length);  
+    }  
+    if(e.getSource()==btnCharacters){  
+        JOptionPane.showMessageDialog(this,"Total Characters with space: "+text.length());  
+    }  
+}  
+public static void main(String[] args) {  
+    new WCC();  
+}
+}
