@@ -39,7 +39,7 @@ public class IPFinderPage extends JFrame implements ActionListener{
     	btn.setBounds(190,303,150,50);  
     	btn.addActionListener(this);  
     	
-    	JButton btnHomePage = new JButton();
+    	btnHomePage = new JButton();
     	
     	btnHomePage.setIcon(new ImageIcon(IPFinderPage.class.getResource("/button.png")));
     	btnHomePage.setText("Home Page");

@@ -2,7 +2,9 @@ package toolbag;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
+import java.awt.Image;
 
+import javax.imageio.ImageIO;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
@@ -19,6 +21,8 @@ import java.awt.Component;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 
 public class HomePage extends JFrame {
@@ -203,6 +207,13 @@ public class HomePage extends JFrame {
 		btnImageComp.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
+				
+				String url1 = JOptionPane.showInputDialog("Enter image1 Url");
+				String url2 = JOptionPane.showInputDialog("Enter image2 Url");
+				ImageComp imageComp = new ImageComp(url1,url2);
+				imageComp.setVisible(true);
+				imageComp.setLocationRelativeTo(null);
+				dispose();
 			}
 		});
 		btnExit.addMouseListener(new MouseAdapter() {

@@ -1,0 +1,51 @@
+package toolbag;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+
+public class ImageComp extends JFrame {
+
+	private JPanel contentPane;
+	private JLabel lblWallpaper;
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					ImageComp frame = new ImageComp();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public ImageComp() {
+		setUndecorated(true);
+		setResizable(false);
+		setBounds(100, 100, 600, 600);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		lblWallpaper = new JLabel("");
+    	lblWallpaper.setIcon(new ImageIcon(ImageComp.class.getResource("/wallpaper.jpg")));
+    	lblWallpaper.setBounds(0, 0, 600, 600);
+    	
+    	contentPane.add(lblWallpaper);
+	}
+
+}

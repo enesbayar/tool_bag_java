@@ -28,22 +28,6 @@ public class SourceCodeGenerator extends JFrame implements ActionListener{
     private JScrollPane scrollPane;
 
 	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					SourceCodeGenerator frame = new SourceCodeGenerator();
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
-
-	/**
 	 * Create the frame.
 	 */
 	public SourceCodeGenerator() {
