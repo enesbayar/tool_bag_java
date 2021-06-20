@@ -23,12 +23,12 @@
   
 - Image Comparison
 
- ![](https://im4.ezgif.com/tmp/ezgif-4-3e219acfe334.gif)
+ ![](https://i.hizliresim.com/qapgdg9.gif)
  
 - Search on Google
 
-  ![](https://im4.ezgif.com/tmp/ezgif-4-551221a7cc60.gif)
+  ![](https://i.hizliresim.com/iqsgttx.gif)
 
 - WCC
 
-  ![](https://im4.ezgif.com/tmp/ezgif-4-361da733e6b3.gif)
+  ![](https://i.hizliresim.com/fqjnbzy.gif)
